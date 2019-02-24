@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Timer;
 
@@ -26,6 +27,7 @@ public class Breathing extends AppCompatActivity implements Runnable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_breathing);
+        Timer = findViewById(R.id.Timer);
         Start_Timer = findViewById(R.id.Start_Timer);
         Stop_Timer = findViewById(R.id.Stop_Timer);
 
@@ -43,7 +45,6 @@ public class Breathing extends AppCompatActivity implements Runnable{
             @Override
             public void onClick(View v) {
                 stopTimer();
-                Timer.setText("" + counter);
 
             }
         });
@@ -54,23 +55,39 @@ public class Breathing extends AppCompatActivity implements Runnable{
 
         public void starTimer () {
             handler.postDelayed(this, 1000);
-            counter++;
-            if (counter == 4) {
 
-            } else if (counter == 11) {
-
-            } else if (counter == 19) {
-
-            }
         }
 
-        public void stopTimer () {
+    @Override
+    public void onBackPressed() {
+        handler.removeCallbacks(this);
+        super.onBackPressed();
+    }
+
+    public void stopTimer () {
+            Timer.setText("0");
             handler.removeCallbacks(this);
             counter = 0;
         }
         public void run () {
             counter++;
-            handler.postDelayed(this, 1000);
+            Timer.setText(String.valueOf(counter));
+            if (counter == 4) {
+                Toast.makeText(this, "Start holding breath", Toast.LENGTH_SHORT).show();
+
+            } else if (counter == 11) {
+                Toast.makeText(this, "Being exhaling", Toast.LENGTH_SHORT).show();
+
+
+            } else if (counter == 19) {
+                Toast.makeText(this, "Finished", Toast.LENGTH_SHORT).show();
+                stopTimer();
+            }
+            //must have been stopped if counter is zero
+            if(counter!=0) {
+                handler.postDelayed(this, 1000);
+            }
+
         }
 
 }

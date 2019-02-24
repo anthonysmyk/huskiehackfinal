@@ -71,14 +71,14 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/medbutton"
         android:layout_width="225dp"
-        android:layout_height="75dp"
+        android:layout_height="78dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/button_bg_rounded_corners"
         android:text="Meditation"
-        android:textSize="20sp"
         android:textColor="#ffffff"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

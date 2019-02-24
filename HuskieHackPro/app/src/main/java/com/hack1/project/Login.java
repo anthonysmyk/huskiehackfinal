@@ -39,10 +39,20 @@ public class Login extends AppCompatActivity {
 
     public void linkUi() {
         emailRegBtn = findViewById(R.id.upemail);
+        emailSignBtn = findViewById(R.id.loginemail);
+        emailSignBtn.setOnClickListener(view->{
+            Intent i = new Intent(Login.this,EmailReg.class);
+            i.putExtra("Login",true);
+            startActivityForResult(i,EMAILREG_CODE);
+        });
 
 
         emailRegBtn.setOnClickListener(view -> {
-            startActivityForResult(new Intent(Login.this, EmailReg.class), EMAILREG_CODE);
+
+            Intent i = new Intent(Login.this, EmailReg.class);
+            i.putExtra("Login",false);
+            startActivityForResult(i,EMAILREG_CODE);
+
 
         });
 
@@ -54,6 +64,8 @@ public class Login extends AppCompatActivity {
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
                 case EMAILREG_CODE:
+                    startActivity(new Intent(this,Moodtracker.class));
+                    finish();
 
                     break;
 

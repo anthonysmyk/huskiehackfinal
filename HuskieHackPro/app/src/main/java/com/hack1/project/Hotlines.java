@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class Hotlines extends AppCompatActivity {
@@ -19,6 +20,9 @@ callhotline3();
     }
     public void callhotline1(){
 depressionhotline = findViewById(R.id.depressionhotline);
+depressionhotline.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
         Intent dialIntent = new Intent(Intent.ACTION_CALL);
         // Set the data for the intent as the phone number.
         dialIntent.setData(Uri.parse("tel:+1-877-235-4525"));
@@ -27,26 +31,41 @@ depressionhotline = findViewById(R.id.depressionhotline);
             startActivity(dialIntent);
         }
     }
+    });
+}
+
 
     public  void callhotline2(){
         suicidehotline = findViewById(R.id.suicidehotline);
-        Intent dialIntent = new Intent(Intent.ACTION_CALL);
-        // Set the data for the intent as the phone number.
-        dialIntent.setData(Uri.parse("tel:+1-800-273-8255"));
-        // If package resolves to an app, send intent.
-        if (dialIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(dialIntent);
-        }
+        suicidehotline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dialIntent = new Intent(Intent.ACTION_CALL);
+                // Set the data for the intent as the phone number.
+                dialIntent.setData(Uri.parse("tel:+1-800-273-8255"));
+                // If package resolves to an app, send intent.
+                if (dialIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(dialIntent);
+                }
+            }
+        });
+
     }
     public void callhotline3(){
         anxietyhotline = findViewById(R.id.anxietyhotline);
-        Intent dialIntent = new Intent(Intent.ACTION_CALL);
-        // Set the data for the intent as the phone number.
-        dialIntent.setData(Uri.parse("tel:+1-310-855-4673"));
-        // If package resolves to an app, send intent.
-        if (dialIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(dialIntent);
-        }
+        anxietyhotline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dialIntent = new Intent(Intent.ACTION_CALL);
+                // Set the data for the intent as the phone number.
+                dialIntent.setData(Uri.parse("tel:+1-310-855-4673"));
+                // If package resolves to an app, send intent.
+                if (dialIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(dialIntent);
+                }
+            }
+        });
+
     }
 
     }

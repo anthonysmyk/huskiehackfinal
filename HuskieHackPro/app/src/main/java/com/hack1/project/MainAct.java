@@ -36,6 +36,15 @@ public class MainAct extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent3 = new Intent(MainAct.this,About.class);
+                    startActivity(intent3);
+                }
+            });
+            Button navigatetomed = findViewById(R.id.medbutton);
+            navigatetomed.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent4 = new Intent(MainAct.this,Guidedmeditation.class);
+                    startActivity(intent4);
                 }
             });
 

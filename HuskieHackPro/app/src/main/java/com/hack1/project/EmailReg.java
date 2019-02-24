@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class EmailReg extends AppCompatActivity {
     private FirebaseAuth auth;
     private EditText email, password;
-    private Button register, login;
+    private Button login;
     private ConstraintLayout layout;
 
 
@@ -30,23 +30,48 @@ public class EmailReg extends AppCompatActivity {
 
     private void linkUI() {
         login = findViewById(R.id.login);
+        login.setText(getIntent().getBooleanExtra("Login",false) ? "Login" : "Register");
               email = findViewById(R.id.emailedit);
         password = findViewById(R.id.passwordedit);
 
 
         login.setOnClickListener(view -> {
-            auth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnCompleteListener(task->{
-                if(task.isSuccessful()){
-                    Toast.makeText(EmailReg.this,"YEAH!",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(EmailReg.this,"YEAfuhufrhH!",Toast.LENGTH_SHORT).show();
+            if(email.getText().toString().length()!=0&&password.getText().toString().length()!=0) {
 
+
+                if (login.getText().equals("Register")) {
+                    auth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(EmailReg.this, "RegSucees!", Toast.LENGTH_SHORT).show();
+                            login();
+                        } else {
+
+                            Toast.makeText(EmailReg.this,email.getText().toString() +"" , Toast.LENGTH_SHORT).show();
+
+
+                        }
+                    });
+                } else {
+                    login();
 
                 }
-            });
 
-
+            }
         });
+
+
+
+    }
+    public void login(){
+        auth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnCompleteListener(task->{
+            if(task.isSuccessful()){
+                setResult(RESULT_OK);
+                finish();
+            }else{
+                Toast.makeText(EmailReg.this,task.getException()+"",Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
 

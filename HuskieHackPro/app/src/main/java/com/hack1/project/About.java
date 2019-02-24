@@ -18,9 +18,9 @@ private Button navigatetohotline, navigatetobreathing, navigatetoanxiety, naviga
         navigatetobreathing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-Intent intentt = new Intent("android.intent.action.view");
+Intent intent = new Intent("android.intent.action.view");
 Uri.parse("https://www.healthline.com/health/4-7-8-breathing#1");
-startActivity(intentt);
+startActivity(intent);
             }
         });
 
