@@ -33,6 +33,8 @@ verysad = findViewById(R.id.verysad);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
+
 
 verysad.setOnClickListener(new View.OnClickListener() {
     @Override
