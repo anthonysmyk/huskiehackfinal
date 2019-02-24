@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
         linkUi();
         ConstraintLayout constraintLayout =(ConstraintLayout)findViewById(R.id.login_activity_screen);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(4000);
+        animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
 
