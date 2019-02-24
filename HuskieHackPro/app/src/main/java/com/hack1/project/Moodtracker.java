@@ -28,6 +28,12 @@ public ImageButton verysad,sad,neutral,happy,delighted;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moodtracker);
 verysad = findViewById(R.id.verysad);
+        
+        ConstraintLayout constraintLayout = (ConstraintLayout) findViewById(R.id.mood_activity_screen);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+
 verysad.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
