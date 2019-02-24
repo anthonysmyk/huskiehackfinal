@@ -44,7 +44,10 @@
         android:id="@+id/navigatebreathing"
         android:layout_width="225dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="354dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/button_bg_rounded_corners"
         android:text="About 4-7-8 Breathing"
         android:textColor="#ffffff"
@@ -52,5 +55,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

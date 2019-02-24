@@ -19,6 +19,7 @@ public class Breathing extends AppCompatActivity implements Runnable{
     public Button Start_Timer;
     public Button Stop_Timer;
     public TextView Timer;
+    public boolean started =false;
     public int  counter = 0;
     private long timeLeftInMil = 19000;
     private Handler handler = new Handler();
@@ -54,8 +55,12 @@ public class Breathing extends AppCompatActivity implements Runnable{
 
 
         public void starTimer () {
-            handler.postDelayed(this, 1000);
+            if (!started) {
+                started=true;
+                Toast.makeText(this, "Breathe in", Toast.LENGTH_SHORT).show();
+                handler.postDelayed(this, 1000);
 
+            }
         }
 
     @Override
@@ -65,6 +70,7 @@ public class Breathing extends AppCompatActivity implements Runnable{
     }
 
     public void stopTimer () {
+        started =false;
             Timer.setText("0");
             handler.removeCallbacks(this);
             counter = 0;
@@ -80,13 +86,13 @@ public class Breathing extends AppCompatActivity implements Runnable{
 
 
             } else if (counter == 19) {
-                Toast.makeText(this, "Finished", Toast.LENGTH_SHORT).show();
-                stopTimer();
+                Toast.makeText(this, "Breathe in", Toast.LENGTH_SHORT).show();
+                counter=0;
             }
             //must have been stopped if counter is zero
-            if(counter!=0) {
+
                 handler.postDelayed(this, 1000);
-            }
+
 
         }
 

@@ -25,19 +25,19 @@
         android:layout_marginBottom="209dp"
         android:background="@drawable/button_bg_rounded_corners"
         android:text="Peace Meditation"
-        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColor="#ffffff"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="281dp"
-        android:layout_height="208dp"
+        android:layout_width="283dp"
+        android:layout_height="231dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="144dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="138dp"
         android:text="1.  Find a calm, peaceful place"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#ffffff" />
@@ -48,8 +48,8 @@
         android:layout_height="172dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="403dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="413dp"
         android:text="2. Let your mind be free"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#ffffff" />
@@ -58,10 +58,12 @@
         android:id="@+id/textView17"
         android:layout_width="335dp"
         android:layout_height="114dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="345dp"
         android:text="3. Take deep breaths and exhale"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#ffffff" />
@@ -78,6 +80,7 @@
         android:layout_marginTop="556dp"
         android:layout_marginEnd="103dp"
         android:layout_marginBottom="55dp"
+        android:textColor="#ffffff"
         android:background="@drawable/button_bg_rounded_corners"
         android:text="Success Meditation" />
 

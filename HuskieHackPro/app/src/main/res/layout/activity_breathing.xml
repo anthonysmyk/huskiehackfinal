@@ -14,15 +14,19 @@
         android:layout_width="190dp"
         android:layout_height="171dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="52dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
         android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="#00008B"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Breath_Title" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
 
     <TextView
         android:id="@+id/Breath_Title"
@@ -52,29 +56,35 @@
         android:layout_height="77dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:text="Start"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Timer"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
 
     <Button
         android:id="@+id/Stop_Timer"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="157dp"
+        android:layout_width="158dp"
         android:layout_height="77dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:text="Reset"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.649"
-        app:layout_constraintStart_toEndOf="@+id/Start_Timer"
-        app:layout_constraintTop_toBottomOf="@+id/Timer" />
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
 
 </android.support.constraint.ConstraintLayout>

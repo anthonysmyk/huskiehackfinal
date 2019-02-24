@@ -1,20 +1,19 @@
 package com.hack1.project;
 
-import android.app.AppComponentFactory;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class MainAct extends AppCompatActivity {
-    private Button navigatetohotline, navigatetobreathing, navigatetoabout;
 
     protected void onCreate(Bundle savedIn){
         super.onCreate(savedIn);
         setContentView(R.layout.activity_menu);
 
-            navigatetobreathing = findViewById(R.id.buttontomed);
+           Button navigatetobreathing = findViewById(R.id.buttontomed);
             navigatetobreathing.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -23,7 +22,7 @@ public class MainAct extends AppCompatActivity {
                 }
             });
 
-            navigatetohotline = findViewById(R.id.buttontosup);
+          Button  navigatetohotline = findViewById(R.id.buttontosup);
             navigatetohotline.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -31,13 +30,19 @@ public class MainAct extends AppCompatActivity {
                     startActivity(Intent2);
                 }
             });
-            navigatetoabout = findViewById(R.id.abt);
-            navigatetoabout.setOnClickListener(new View.OnClickListener() {
+        Button   navigatetochat = findViewById(R.id.chat);
+            navigatetochat.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent3 = new Intent(MainAct.this,About.class);
+                    Intent intent3 = new Intent(MainAct.this,ChatScreen.class);
                     startActivity(intent3);
                 }
+            });
+            Button about = findViewById(R.id.about);
+            about.setOnClickListener(view->{
+                Intent viewIntent = new Intent("android.intent.action.VIEW",
+                        Uri.parse("https://joytaylor.github.io/niuHack/"));
+                startActivity(viewIntent);
             });
             Button navigatetomed = findViewById(R.id.medbutton);
             navigatetomed.setOnClickListener(new View.OnClickListener() {
