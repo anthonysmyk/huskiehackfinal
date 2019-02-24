@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="login_activity_screen">login_activity_screen</string>
+    <string name="mood_activity_screen">mood_activity_screen</string>
     <string name="login_text">Login in with email</string>
     <string name="depression_hotline">DEPRESSION HOTLINE</string>
     <string name="suicide_hotline">Suicide Hotline</string>
