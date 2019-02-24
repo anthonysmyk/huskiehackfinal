@@ -20,7 +20,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 public class Login extends AppCompatActivity {
     public static final int EMAILREG_CODE = 10;
     private Button emailRegBtn, googleBtn, emailSignBtn;
-    private GoogleSignInClient googleSignInClient;
+    //private GoogleSignInClient googleSignInClient;
     private SignInButton googleSignInButton;
 
 

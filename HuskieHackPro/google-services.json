@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "858512279230",
+    "firebase_url": "https://tempbase-22f60.firebaseio.com",
+    "project_id": "tempbase-22f60",
+    "storage_bucket": "tempbase-22f60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858512279230:android:bd8f3b7b3f07bf80",
+        "android_client_info": {
+          "package_name": "com.hack1.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858512279230-hthu5j49924h7tq8oo1vu2p2resn0rg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlzbye2Iry_lLeiKYsgbF7nxt9o4vdPmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

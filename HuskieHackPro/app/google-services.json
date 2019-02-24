@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "258678901042-jdrlbo6upnffmvjs9isnpfvmj6p55ppg.apps.googleusercontent.com",
+          "client_id": "258678901042-l0ld029gsns9g940iaujj7b85jtdthp6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.hack1.project",
-            "certificate_hash": "0648ea1181991447bc38df048094c860c91c487c"
+            "certificate_hash": "eb407a8ffc28da7e1f8cdd53d609d4dd278a99ce"
           }
         },
         {

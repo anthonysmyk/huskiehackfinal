@@ -22,13 +22,13 @@
 
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailedit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
-            android:textColorHint="#ffffff"
 
 
-            />
+            android:textColorHint="#ffffff" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -43,11 +43,11 @@
         >
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordedit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColorHint="#ffffff"
-            />
+            android:textColorHint="#ffffff" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/login"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="327dp"
