@@ -1,0 +1,17 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /default
+  script: conn.php    
+- url: /retrive
+  script: messageRetrive.php
+- url: /createM
+  script: createMessage.php
+- url: /createB
+  script: createBoard.php
+- url: /changeUserData
+  script: userData.php
+
+
