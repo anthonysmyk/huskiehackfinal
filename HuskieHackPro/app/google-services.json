@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "258678901042",
+    "firebase_url": "https://huskiehackpro.firebaseio.com",
+    "project_id": "huskiehackpro",
+    "storage_bucket": "huskiehackpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258678901042:android:bd8f3b7b3f07bf80",
+        "android_client_info": {
+          "package_name": "com.hack1.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258678901042-jdrlbo6upnffmvjs9isnpfvmj6p55ppg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hack1.project",
+            "certificate_hash": "0648ea1181991447bc38df048094c860c91c487c"
+          }
+        },
+        {
+          "client_id": "258678901042-p0u7bhp424ks2ppouu9dhkpupm17j9c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmIkdCS_7yOGQ0aqyvwnP1P-W9MSluaSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258678901042-p0u7bhp424ks2ppouu9dhkpupm17j9c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
