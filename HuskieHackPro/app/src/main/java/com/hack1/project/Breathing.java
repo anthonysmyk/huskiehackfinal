@@ -89,7 +89,6 @@ public class Breathing extends AppCompatActivity implements Runnable{
                 Toast.makeText(this, "Breathe in", Toast.LENGTH_SHORT).show();
                 counter=0;
             }
-            //must have been stopped if counter is zero
 
                 handler.postDelayed(this, 1000);
 
