@@ -4,4 +4,3 @@ Serenity, a Mental Health app to combat rising mental health problems developed 
 
 It should be noted this was uploaded after much of the work was completed on Floobits, thus the commits do not necessarily reflect who did which parts.
 
-Co-contirbuted on this Project with Fred Tian, Ibrahim Islam, Anthony Smykalov, Joy West, and Tony Huerta
